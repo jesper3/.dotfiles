@@ -5,6 +5,9 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Shift+Return exec ~/.i3/copyterm
+bindsym $mod+b exec ~/.i3/openenv
+
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
@@ -110,3 +113,4 @@ bar {
         status_command i3status
 }
 
+exec ~/.i3/i3init
