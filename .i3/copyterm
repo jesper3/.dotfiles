@@ -1,0 +1,3 @@
+#!/bin/bash
+export PROMPT_COMMAND="cd $(cat ${HOME}/.i3/cwd) ; export PROMPT_COMMAND=''"
+i3-sensible-terminal
