@@ -1,0 +1,12 @@
+#!/bin/bash
+i3-input&> /tmp/i3-input
+OUT=$(cat /tmp/i3-input | grep output | cut -f3 -d ' ')
+echo "~/Programming/${OUT}/" > ~/.i3/cwd
+./copyterm
+i3-msg split horizontal
+./copyterm
+i3-msg focus left
+i3-msg resize grow right
+i3-msg focus right
+i3-msg split vertical
+./copyterm
