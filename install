@@ -1,3 +1,20 @@
 #!/bin/bash
+
+CONFIGDIR=$1
+CONFIG="${1}/config"
+
 cp profile ${HOME}/.profile
 cp bash_aliases ${HOME}/.bash_aliases
+
+# Copy all files in i3/ except config
+find i3/* | grep -v "config$" | xargs -I % cp -v % $CONFIGDIR
+
+ARRAY=(copyterm openenv i3init)
+echo "# From https://github.com/jesper3/.dotfiles " > $CONFIG
+
+for I in "${ARRAY[@]}"
+do
+	echo "set \$${I} ${CONFIGDIR}/${I}" >> $CONFIG
+done
+
+cat i3/config >> $CONFIG
