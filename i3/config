@@ -113,4 +113,4 @@ bar {
         status_command i3status
 }
 
-exec <INIT>
+exec <I3INIT>
