@@ -20,4 +20,11 @@ do
 	echo "set \$${I} ${CONFIGDIR}/${I}" >> $CONFIG
 done
 
+I="0"
+while [ $I -lt 10 ]
+do
+	echo "set \$bg${I} exec --no-startup-id feh --bg-scale ${CONFIGDIR}/bg${I}" >> $CONFIG
+	I=$[$I+1]
+done
+
 cat i3/config >> $CONFIG

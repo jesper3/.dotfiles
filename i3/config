@@ -57,16 +57,16 @@ set $WS8 8: Shell
 set $WS9 9: Utils
 set $WS10 10: Misc
 
-bindsym $mod+1 workspace $WS1
-bindsym $mod+2 workspace $WS2
-bindsym $mod+3 workspace $WS3
-bindsym $mod+4 workspace $WS4
-bindsym $mod+5 workspace $WS5
-bindsym $mod+6 workspace $WS6
-bindsym $mod+7 workspace $WS7
-bindsym $mod+8 workspace $WS8
-bindsym $mod+9 workspace $WS9
-#bindsym $mod+0 workspace $WS10
+bindsym $mod+1 workspace $WS1; $bg1
+bindsym $mod+2 workspace $WS2; $bg2
+bindsym $mod+3 workspace $WS3; $bg3
+bindsym $mod+4 workspace $WS4; $bg4
+bindsym $mod+5 workspace $WS5; $bg5
+bindsym $mod+6 workspace $WS6; $bg6
+bindsym $mod+7 workspace $WS7; $bg7
+bindsym $mod+8 workspace $WS8; $bg8
+bindsym $mod+9 workspace $WS9; $bg9
+#bindsym $mod+0 workspace $WS10; $bg10
 
 bindsym $mod+Shift+1 move container to workspace $WS1
 bindsym $mod+Shift+2 move container to workspace $WS2
