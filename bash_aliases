@@ -3,7 +3,7 @@ alias shutdown-now="sudo shutdown -h now"
 
 monkeypatch_cd() {
 	cd $1
-	echo $PWD > ${HOME}/.i3/cwd
+	echo $PWD > /tmp/pwd
 }
 
 standalone_emacs() {
