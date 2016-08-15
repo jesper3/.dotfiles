@@ -1,3 +1,2 @@
 #!/bin/bash
-export PROMPT_COMMAND="cd $(cat /tmp/pwd) ; export PROMPT_COMMAND=''"
-i3-sensible-terminal
+echo "1" > /tmp/setpwd && i3-sensible-terminal
