@@ -45,6 +45,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
+bindsym $mod+Shift+m move workspace to output right
+
 set $WS1 1: Tab 1
 set $WS2 2: Tab 2
 set $WS3 3: Term
